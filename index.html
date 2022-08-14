@@ -7,54 +7,161 @@
   <link rel="stylesheet" href="style.css">
   <title>Admin Dashboard</title>
 </head>
-<body>
-  <div class="container">
-    <div class="sidebar">
-      <div class="menu">
-        <div class="logo"><img class="icons" src="images/dashboard.svg">Dashboard</div>
-        <div class="navigation">
-          <a href="" class="home"><img src="images/home.svg" class="icons">Home</a>
-          <a href="" class="profile"><img src="images/profile.svg" class="icons">Profile</a>
-          <a href="" class="messages"><img src="images/message.svg"class="icons"> Messages</a>
-          <a href="" class="history"><img src="images/history.svg" class="icons">History</a>
-          <a href="" class="tasks"><img src="images/tasks.svg" class="icons">Tasks</a>
-          <a href="" class="social"><img src="images/social.svg" class="icons">Communities</a>
+<body class="grid">
+  <div class="sidebar-container">
+    <div class="sidebar grid">
+      <div class="logo flex"><img class="icons" src="images/dashboard.svg">Dashboard</div>
+      <div class="navigation flex">
+        <a href="" class="item flex"><img src="images/home.svg" class="icons">Home</a>
+        <a href="" class="item flex"><img src="images/profile.svg" class="icons">Profile</a>
+        <a href="" class="item flex"><img src="images/message.svg"class="icons">Messages</a>
+        <a href="" class="item flex"><img src="images/history.svg" class="icons">History</a>
+        <a href="" class="item flex"><img src="images/tasks.svg" class="icons">Tasks</a>
+        <a href="" class="item flex"><img src="images/social.svg" class="icons">Communities</a>
+      </div>
+      <div class="utility flex">
+        <a href="" class="item flex"><img src="images/settings.svg" class="icons">Settings</a>
+        <a href="" class="item flex"><img src="images/support.svg" class="icons">Support</a>
+        <a href="" class="item flex"><img src="images/privacy.svg" class="icons">Privacy</a>
+      </div>
+    </div>
+  </div>
+  <div class="header-main">
+    <div class="header-container">
+      <div class="header grid">
+        <div class="search">
+          <img class="icons" src="images/magnify.svg" alt="">
+          <input type="search" id="search" name="search">
         </div>
-        <div class="branding">
-          <a href="" class="settings"><img src="images/settings.svg" class="icons">Settings</a>
-          <a href="" class="support"><img src="images/support.svg" class="icons">Support</a>
-          <a href="" class="privacy"><img src="images/privacy.svg" class="icons">Privacy</a>
+        <div class="user-info">
+          <img class="icons" src="images/bell-ring-outline.svg" alt="">
+          <img class="avatar" src="images/avatarzero.svg" alt="">
+          <span>Levi Fin</span>
+        </div>
+        <div class="greeting">
+          <img class="avatar" src="images/avatarzero.svg" alt="">
+          <span><strong>Hi there,</strong><br>Levi Fine (@levi)</span>
+        </div>
+        <div class="buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
         </div>
       </div>
     </div>
-    <div class="header">
-      <div class="search-bar">
-        <input type="search" id="search" name="search">
+    <div class="main">
+      <div class="project-container">
+        <div class="title">Card Title</div>
+          <div class="card grid">
+            <div class="card-text sub-card">
+              <span>Super Cool Project</span><br>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam eos modi nam saepe? Lorem, ipsum dolor.
+            </div>
+            <div class="card-links sub-card">
+              <a href=""><img class="icons" src="images/star-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/eye-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/share-variant-outline.svg"></a>
+            </div>
+          </div>
+          <div class="card grid">
+            <div class="card-text sub-card">
+              <span>Less Cool Project</span><br>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor accusantium necessitatibus rem provident.
+            </div>
+            <div class="card-links sub-card">
+              <a href=""><img class="icons" src="images/star-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/eye-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/share-variant-outline.svg"></a>
+            </div>
+          </div>
+          <div class="card grid">
+            <div class="card-text sub-card">
+              <span>Impossible App</span><br>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, inventore reprehenderit nulla earum cupiditate ex.
+            </div>
+            <div class="card-links sub-card">
+              <a href=""><img class="icons" src="images/star-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/eye-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/share-variant-outline.svg"></a>
+            </div>
+          </div>
+          <div class="card grid">
+            <div class="card-text sub-card">
+              <span>Easy Peasy App</span><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam aliquid provident consectetur.
+            </div>
+            <div class="card-links sub-card">
+              <a href=""><img class="icons" src="images/star-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/eye-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/share-variant-outline.svg"></a>
+            </div>
+          </div>
+          <div class="card grid">
+            <div class="card-text sub-card">
+              <span>Ad Blocker</span><br>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium, inventore reprehenderit nulla earum cupiditate ex.
+            </div>
+            <div class="card-links sub-card">
+              <a href=""><img class="icons" src="images/star-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/eye-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/share-variant-outline.svg"></a>
+            </div>
+          </div>
+          <div class="card grid">
+            <div class="card-text sub-card">
+              <span>Money Maker</span><br>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae magnam aliquid provident consectetur.
+            </div>
+            <div class="card-links sub-card">
+              <a href=""><img class="icons" src="images/star-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/eye-plus-outline.svg"></a>
+              <a href=""><img class="icons" src="images/share-variant-outline.svg"></a>
+            </div>
+          </div>
       </div>
-      <div class="user-info">Levi Fine</div>
-      <div class="greeting">
-        <h5>Hi there,</h5>
-        <h3>Levi Fine (@levi)</h3>
-      </div>
-      <div class="buttons">
-        <button>New</button>
-        <button>Upload</button>
-        <button>Shard</button>
+      <div class="column-container">
+        <div class="title">Announcements</div>
+        <div class="announcements column">
+            <div class="item">
+              <h4><span>Site Maintenance</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, minus.</h4>
+            </div>
+            <hr>
+            <div class="item">
+              <h4><span>Community Share Day</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, minus.</h4>
+            </div>
+            <hr>
+            <div class="item">
+              <h4><span>Privacy Update</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi, minus.</h4>
+            </div>
+        </div>
+        <div class="title">Trending</div>
+        <div class="trending column">
+          <div class="item flex">
+            <img class="avatar" src="images/avatarone.svg" alt="">
+            <div class="text">
+              @tegan<br>World Peace Builder
+            </div>
+          </div>
+          <div class="item flex">
+            <img class="avatar" src="images/avatartwo.svg" alt="">
+            <div class="text">
+              @morgan<br>Super Cool Project
+            </div>
+          </div>
+          <div class="item flex">
+            <img class="avatar" src="images/avatarthree.svg" alt="">
+            <div class="text">
+              @kendall<br>Life Changing App
+            </div>
+          </div>
+          <div class="item flex">
+            <img class="avatar" src="images/avatarzero.svg" alt="">
+            <div class="text">
+              @alex<br>No Traffic Maker
+            </div>
+        </div>
       </div>
     </div>
-
-      <div class="main-content">
-        <div class="projects">
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatem itaque similique eaque molestiae perferendis, eum vero beatae illum? Amet quisquam, asperiores praesentium commodi labore reprehenderit vitae blanditiis facilis aliquam.</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sequi quam provident quisquam, labore adipisci incidunt ea velit possimus suscipit rerum iste consequuntur assumenda quod? Voluptatum expedita quasi sequi dolore?</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, vel officia ab blanditiis repudiandae ipsa voluptatem! Quaerat perferendis aperiam, iusto nisi velit ipsa error, voluptates necessitatibus consequatur delectus nesciunt molestiae?</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores quo quasi fuga amet excepturi consequatur laborum consectetur, molestias, omnis nulla reiciendis. Sed repellendus eligendi, debitis voluptatum eius modi distinctio veritatis.</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui aliquid excepturi veritatis rerum sit quos aliquam, officiis eveniet molestiae ipsum harum facere, rem eius facilis dolorem cumque reiciendis sed!</div>
-          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi qui aliquid excepturi veritatis rerum sit quos aliquam, officiis eveniet molestiae ipsum harum facere, rem eius facilis dolorem cumque reiciendis sed!</div>
-        </div>
-        <div class="announcements">Announcments</div>
-        <div class="trending">Trending</div>
-      </div>
   </div>
 </body>
 </html>
